@@ -1,0 +1,140 @@
+:root {
+    --laranja: #ff7f27;
+    --azul: #00a3e0;
+}
+
+body, html {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/*-------------------------------------------------------------------------*/
+
+header {
+    background-color: #ff7d2713;
+    padding: 1px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+}
+
+header #logo {
+    width: 50px;
+    height: 50px;
+}
+
+header #titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--laranja);
+    margin-left: 10px;
+}
+
+/*-------------------------------------------------------------------------*/
+
+#primeiraSecao {
+    background-color: #fcfcfc;
+    width: 100%;
+    height: 501px;
+    overflow: hidden;
+}
+
+#primeiraSecao #frase {
+    position: absolute;
+    width: 60%;
+    top: 180px;
+    left: 50px;
+    font-size: 40px;
+    font-family: "Protest Revolution", serif;
+    font-weight: 500;
+}
+
+#primeiraSecao #colorido {
+    color: var(--laranja);
+}
+
+#primeiraSecao #colorido-azul {
+    color: var(--azul);
+}
+
+#primeiraSecao #claudia {
+    position: absolute;
+    right: 0;
+}
+
+/*-------------------------------------------------------------------------*/
+
+#segundaSecao {
+    text-align: center;
+    height: 300px;
+}
+
+#segundaSecao #titulo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+#segundaSecao #servicos {
+    margin-top: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+#segundaSecao #servicos aside i {
+    font-size: 80px;
+    color: var(--laranja);
+}
+
+#segundaSecao #servicos #servico2 i {
+    color: var(--azul);
+}
+
+#segundaSecao #servicos #servico4 i {
+    color: var(--azul);
+}
+
+#segundaSecao #servicos aside h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 680px) {
+    #segundaSecao #servicos {
+        flex-direction: column;
+    }
+    
+    #segundaSecao {
+        height: 900px;
+    }
+}
+
+@media (max-width: 480px) { 
+    #primeiraSecao #frase {
+        top: 80px;
+    }
+}
+
+@media (max-width: 440px) { 
+    #primeiraSecao #frase {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 400px) { 
+    #primeiraSecao #frase {
+        left: 5%;
+        font-size: 6dvw;
+    }
+}
+
+/*-------------------------------------------------------------------------*/
+
+#terceiraSecao #videoApresentacao {
+    height: 450px;
+    border-radius: 20px;
+    margin-left: 50px;
+}
