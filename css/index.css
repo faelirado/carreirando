@@ -19,13 +19,17 @@ header {
     border-radius: 0 0 20px 20px;
 }
 
+header a {
+    color: transparent;
+}
+
 header #logo {
     width: 50px;
     height: 50px;
 }
 
 header #titulo {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--laranja);
     margin-left: 10px;
 }
@@ -85,6 +89,17 @@ header #titulo {
     text-align: center;
 }
 
+#segundaSecao #servicos aside {
+    box-shadow: 3px 3px 10px rgba(12, 12, 12, 0.200);
+    padding: 2px;
+    flex: 1;
+    border-radius: 5%;
+}
+
+#segundaSecao #servicos aside h3{
+    font-size: 17px;
+}
+
 #segundaSecao #servicos aside i {
     font-size: 80px;
     color: var(--laranja);
@@ -134,7 +149,141 @@ header #titulo {
 /*-------------------------------------------------------------------------*/
 
 #terceiraSecao #videoApresentacao {
+    margin-top: 40px;
     height: 450px;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-left: 50px;
+}
+
+/*-------------------------------------------------------------------------*/
+
+#quartaSecao {
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#quartaSecao #diasSemana {
+    color: var(--azul);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    gap: 40px;
+}
+
+#quartaSecao #diasSemana section {
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(12, 12, 12, 0.200);
+    padding: 2px;
+    flex: 1;
+}
+
+#quartaSecao #diasSemana h5 {
+    font-size: 15px;
+}
+
+#quartaSecao #agendar {
+    background-color: var(--laranja);
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    transform: translate(-50%,50px);
+}
+
+@media ( max-width: 590px ){
+    #quartaSecao #diasSemana {
+        flex-direction: column;
+    }
+    #quartaSecao {
+        height: 860px;
+    }
+}
+
+/*-------------------------------------------------------------------------*/
+
+footer {
+    background-color: #ec7626;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    color: #f0f0f0;
+    height: 80px;
+    margin-top: 40px;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+footer #direitos {
+    margin-top: 30px;
+}
+
+footer #direitos a {
+    font-size: 12px;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+footer #direitos a:hover {
+    text-decoration: underline;
+}
+
+footer #direitos p {
+    font-size: 12px;
+}
+
+footer #sociais {
+    position: absolute;
+    right: 50px;
+    transform: translateY(-110px);
+}
+
+footer #sociais h5{
+    margin-left: 5px;
+}
+
+footer #sociais #botoes {
+    display: flex;
+    gap: 8px;
+}
+
+footer #sociais #botoes a {
+    text-align: center;
+    height: 60px;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+footer #sociais #botoes a img {
+    border-radius: 25%;
+    width: 35px;
+    height: 35px;
+}
+
+footer #sociais #botoes a p {
+    transform: translateY(-10px);
+    font-size: 12px;
+    color: #ffd9c0;
+}
+
+@media ( max-width: 520px ){
+    footer {
+        height: 250px;
+    }
+    footer #direitos {
+        margin-top: 200px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    footer #sociais {
+        position: absolute;
+        right: 50%;
+        transform: translate(50%,-250px);
+    }
 }
